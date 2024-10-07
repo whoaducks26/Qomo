@@ -1,5 +1,5 @@
 rune_list = [
-    ['trick', 20, 30], 10, 'cursed', 40, 'broken', 20, 'none', 30,
+    10, 'cursed', 40, 'broken', 20, 'none', 30, ['trick', 20, 30]
     ]
 
 target_value = 0
@@ -20,4 +20,4 @@ for i in range(len(rune_list)):
     
 
 print(target_value)
-
+#GIT{Failed to decode the rune because the target is now CURRENT_TOTAL}
