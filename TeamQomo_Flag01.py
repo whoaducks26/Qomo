@@ -1,5 +1,5 @@
 #Input
-code = input('Enter code: ')
+#code = input('Enter code: ')
 #code = 'AUC8EH'
 #code = 'ZY12QHPO94TR'
 #code = 'ZY12QHPO94TO'
@@ -11,9 +11,12 @@ def masking_spell(code):
 
     elif code[-1] in {'A', 'E', 'I', 'O', 'U'}:
         print('Dark Magic Detected')  #<--- dark magic
+    
+    else:
+        masked_code = "*"*len(code[:-4]) + code[-4::]
 
-    masked_code = code[-4::]
+        print(masked_code)
 
-    print(masked_code)
-
-masking_spell(code)
+masking_spell(code="AUC8EH")
+masking_spell(code="ZY12QHPO94TR")
+masking_spell(code="ZY12QHPO94TO")
