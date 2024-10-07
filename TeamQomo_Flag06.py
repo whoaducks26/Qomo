@@ -11,11 +11,8 @@ def sort_crystals_by_power(crystal_powers):
     # print(positive_powers)
     final_powers = positive_powers + negative_powers
     print(final_powers)
-    return f"GIT{final_powers[0]}_{final_powers[-1]}"
+    return "GIT{"+f"{final_powers[0]}_{final_powers[-1]}"+"}"
 
 crystal_powers = ["15", "42", "-9", "33", "57", "-23"]
 sorted_crystals = sort_crystals_by_power(crystal_powers)
 print(sorted_crystals)
-
-
-#someone help me make the output GIT{57_-23} instead of GIT57_-23
