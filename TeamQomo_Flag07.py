@@ -19,4 +19,5 @@ for word in msg_arr:
         new += dic.get("common_spells").get(word)["power"]
     new += " "
 
-print(new)
+new = new.strip(" ")
+print("GIT{"+new+"}")
