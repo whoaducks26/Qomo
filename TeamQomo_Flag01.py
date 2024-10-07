@@ -8,12 +8,13 @@
 def masking_spell(code):
     if len(code) < 8:
         print('Unstable code')  #<--- code is too weak to protect
-
-    elif code[-1] in {'A', 'E', 'I', 'O', 'U'}:
-        print('Dark Magic Detected')  #<--- dark magic
     
     else:
         masked_code = "*"*len(code[:-4]) + code[-4::]
+
+
+        if code[-1] in {'A', 'E', 'I', 'O', 'U'}:
+            masked_code += '- Dark Magic Detected'  #<--- dark magic
 
         print(masked_code)
 
